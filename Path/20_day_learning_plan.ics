@@ -1,0 +1,164 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:20250804T090000Z
+UID:day1@learningplan.local
+DTSTART;TZID=UTC:20250804T090000
+DTEND;TZID=UTC:20250804T170000
+SUMMARY:Day 1: Java 8: Lambdas & Functional Interfaces
+DESCRIPTION:Java 8: Lambdas & Functional Interfaces\nDSA Focus: DSA: Arrays, Strings\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250805T090000Z
+UID:day2@learningplan.local
+DTSTART;TZID=UTC:20250805T090000
+DTEND;TZID=UTC:20250805T170000
+SUMMARY:Day 2: Java 8: Stream API (map, filter, reduce)
+DESCRIPTION:Java 8: Stream API (map, filter, reduce)\nDSA Focus: DSA: HashMap, Sliding Window\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250806T090000Z
+UID:day3@learningplan.local
+DTSTART;TZID=UTC:20250806T090000
+DTEND;TZID=UTC:20250806T170000
+SUMMARY:Day 3: Java 8: Optional, Method References, Date/Time API
+DESCRIPTION:Java 8: Optional, Method References, Date/Time API\nDSA Focus: DSA: Subarrays, Prefix Sum\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250807T090000Z
+UID:day4@learningplan.local
+DTSTART;TZID=UTC:20250807T090000
+DTEND;TZID=UTC:20250807T170000
+SUMMARY:Day 4: CI/CD: Git & Jenkins Basics
+DESCRIPTION:CI/CD: Git & Jenkins Basics\nDSA Focus: DSA: Stacks, Queues\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250808T090000Z
+UID:day5@learningplan.local
+DTSTART;TZID=UTC:20250808T090000
+DTEND;TZID=UTC:20250808T170000
+SUMMARY:Day 5: CI/CD: Jenkins Pipelines, GitHub Actions
+DESCRIPTION:CI/CD: Jenkins Pipelines, GitHub Actions\nDSA Focus: DSA: Recursion, Binary Search\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250809T090000Z
+UID:day6@learningplan.local
+DTSTART;TZID=UTC:20250809T090000
+DTEND;TZID=UTC:20250809T170000
+SUMMARY:Day 6: Docker: Architecture, Dockerfile, Images
+DESCRIPTION:Docker: Architecture, Dockerfile, Images\nDSA Focus: DSA: Linked Lists\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250810T090000Z
+UID:day7@learningplan.local
+DTSTART;TZID=UTC:20250810T090000
+DTEND;TZID=UTC:20250810T170000
+SUMMARY:Day 7: Docker: Compose, Volumes, Networking
+DESCRIPTION:Docker: Compose, Volumes, Networking\nDSA Focus: DSA: Two Pointers, Sorting\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250811T090000Z
+UID:day8@learningplan.local
+DTSTART;TZID=UTC:20250811T090000
+DTEND;TZID=UTC:20250811T170000
+SUMMARY:Day 8: Kubernetes: Pods, Deployments, Services
+DESCRIPTION:Kubernetes: Pods, Deployments, Services\nDSA Focus: DSA: Trees (BFS, DFS)\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250812T090000Z
+UID:day9@learningplan.local
+DTSTART;TZID=UTC:20250812T090000
+DTEND;TZID=UTC:20250812T170000
+SUMMARY:Day 9: Kubernetes: Scaling, ConfigMaps, Secrets
+DESCRIPTION:Kubernetes: Scaling, ConfigMaps, Secrets\nDSA Focus: DSA: Graphs (BFS, DFS)\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250813T090000Z
+UID:day10@learningplan.local
+DTSTART;TZID=UTC:20250813T090000
+DTEND;TZID=UTC:20250813T170000
+SUMMARY:Day 10: AWS: EC2, IAM, CLI Basics
+DESCRIPTION:AWS: EC2, IAM, CLI Basics\nDSA Focus: DSA: Graphs Advanced\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250814T090000Z
+UID:day11@learningplan.local
+DTSTART;TZID=UTC:20250814T090000
+DTEND;TZID=UTC:20250814T170000
+SUMMARY:Day 11: AWS: S3, RDS Basics
+DESCRIPTION:AWS: S3, RDS Basics\nDSA Focus: DSA: Greedy Algorithms\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250815T090000Z
+UID:day12@learningplan.local
+DTSTART;TZID=UTC:20250815T090000
+DTEND;TZID=UTC:20250815T170000
+SUMMARY:Day 12: AWS: ECS, Elastic Beanstalk
+DESCRIPTION:AWS: ECS, Elastic Beanstalk\nDSA Focus: DSA: Heap, Priority Queue\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250816T090000Z
+UID:day13@learningplan.local
+DTSTART;TZID=UTC:20250816T090000
+DTEND;TZID=UTC:20250816T170000
+SUMMARY:Day 13: AWS: Project Deployment
+DESCRIPTION:AWS: Project Deployment\nDSA Focus: DSA: Binary Trees, BSTs\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250817T090000Z
+UID:day14@learningplan.local
+DTSTART;TZID=UTC:20250817T090000
+DTEND;TZID=UTC:20250817T170000
+SUMMARY:Day 14: Project Integration: Plan CI/CD + Docker
+DESCRIPTION:Project Integration: Plan CI/CD + Docker\nDSA Focus: DSA: Sliding Window, Revision\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250818T090000Z
+UID:day15@learningplan.local
+DTSTART;TZID=UTC:20250818T090000
+DTEND;TZID=UTC:20250818T170000
+SUMMARY:Day 15: Project Integration: Deploy to Kubernetes
+DESCRIPTION:Project Integration: Deploy to Kubernetes\nDSA Focus: DSA: Trees & Graphs Review\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250819T090000Z
+UID:day16@learningplan.local
+DTSTART;TZID=UTC:20250819T090000
+DTEND;TZID=UTC:20250819T170000
+SUMMARY:Day 16: Project Integration: Deploy to AWS
+DESCRIPTION:Project Integration: Deploy to AWS\nDSA Focus: DSA: HashMap + Recap\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250820T090000Z
+UID:day17@learningplan.local
+DTSTART;TZID=UTC:20250820T090000
+DTEND;TZID=UTC:20250820T170000
+SUMMARY:Day 17: Project: Logging, Monitoring, Polish
+DESCRIPTION:Project: Logging, Monitoring, Polish\nDSA Focus: DSA: Bit Manipulation\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250821T090000Z
+UID:day18@learningplan.local
+DTSTART;TZID=UTC:20250821T090000
+DTEND;TZID=UTC:20250821T170000
+SUMMARY:Day 18: Revision: Java 8, CI/CD
+DESCRIPTION:Revision: Java 8, CI/CD\nDSA Focus: DSA: DP Basic\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250822T090000Z
+UID:day19@learningplan.local
+DTSTART;TZID=UTC:20250822T090000
+DTEND;TZID=UTC:20250822T170000
+SUMMARY:Day 19: Revision: Docker, Kubernetes
+DESCRIPTION:Revision: Docker, Kubernetes\nDSA Focus: DSA: DP Advanced\nDaily LeetCode practice + implementation
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20250823T090000Z
+UID:day20@learningplan.local
+DTSTART;TZID=UTC:20250823T090000
+DTEND;TZID=UTC:20250823T170000
+SUMMARY:Day 20: Mock Interviews + Final Review
+DESCRIPTION:Mock Interviews + Final Review\nDSA Focus: DSA: Backtracking\nDaily LeetCode practice + implementation
+END:VEVENT
+END:VCALENDAR
