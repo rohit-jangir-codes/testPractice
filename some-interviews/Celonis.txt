@@ -1,0 +1,26 @@
+Celonis
+
+1st round:
+
+Explain one of the current project using architecture diagram.
+Design a Hashmap (DSA).
+
+2nd round:
+
+Given a take home assisment. Work on the assigned tasks from that assignment and submit.
+
+3rd round:
+
+Demo the assissment from 2nd round. 
+Explain the reasoning behind the chosen solution.
+Scope of improvement
+Testing strategies
+Use of AI (If any)
+
+4th round:
+
+Design a movie ticket booking system, end to end.
+
+5th round:
+
+Director round. Normal introduction conversation.

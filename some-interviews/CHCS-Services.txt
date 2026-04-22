@@ -1,0 +1,78 @@
+
+CHCS service
+1st round:
+
+emp table
+
+name, dept
+
+select emp_dept, Count(*) as emp_count
+from emp
+group by emp_dept,-
+having count(*)>20;
+
+
+@RestController
+@ResquestMapping("/employee")
+public class EmployeeController
+{
+
+@Autowired
+private EmpRepo empRepo;
+
+@PostMapping("/save")
+public List<Employee> saveEmpData(@RequestBody List<Employee> emp) {
+
+return empRepo.saveAll(emp);
+}
+
+}
+
+// 
+
+@Modify
+@Query(update status s SET s.flag = true where 
+
+// More focused on Java8, SQL and Spring
+
+2nd round:
+
+
+
+@RequestController
+@RequestMapping(/v1/user)
+public class UserController{
+
+
+private UserService userService;
+
+
+@GetMapping("id")
+public User getUserById(@PathVariable int id) {
+
+return userService.getUserById(id);
+
+} 
+
+}
+
+public User{
+
+int Id;
+String name;
+int age;
+String email;
+
+}
+
+
+local lc = require "resty.jwt"
+
+local auth_header = ngx.var.http_authorization
+
+if (not auth_header) then
+    ngx.status = ngx.HTTP_UNAUTHORIZED
+	return ngx.exit(ngx.HTTP_UNAUTHORIZED)
+end
+
+local 

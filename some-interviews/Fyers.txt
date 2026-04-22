@@ -1,0 +1,79 @@
+
+
+
+Fyers 1st round:
+
+
+interface calculate{
+
+add(int a, int b);
+
+}
+
+abstract class calculate{
+
+add(int a, int b);
+
+}
+
+int a = [9,1,3,5,1,2,5,8,6];
+
+
+class Employee{
+
+private String name;
+int hashCode(){
+
+return 10;
+}
+
+void setName(String name);
+getName();
+
+}
+
+Employee e= new Employee();
+Employee e1= new Employee();
+Employee e2= new Employee();
+Employee e3= new Employee();
+
+
+
+int a = [9,1,3,5,2,8,6,7]; 
+
+
+int k = 2;
+
+print 2 smallest number from array
+
+
+PriorityQueue<Integer> queue = new PriorityQueue<>(Collections.reverseOrder())
+
+for(int n : a) {
+
+queue.offer(n);
+
+if(queue.size()>k) {
+queue.poll();
+}
+
+//
+
+
+}
+
+eployee => id, name, org_id (FK)
+
+oeg => id (PK), name
+
+
+select o.name AS ORG_name, COUNT(e.id) as e_count
+from org o
+LEFT join employee e
+ON e.id = o.id
+group by o.name 
+having count(e.id) > 2;
+
+
+
+// intterview went great, got compliment from interviewr. Later ghosted by HR

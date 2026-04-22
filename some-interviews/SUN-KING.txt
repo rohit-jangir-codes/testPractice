@@ -1,0 +1,78 @@
+
+
+SUN KING:
+
+1st round:
+
+
+Left join
+
+table a, table b
+
+Left join a.id LEFT JOIN b.id 
+
+Inner join:
+
+ a.id INNER JOIN b.id
+ 
+ 
+ 
+ Left join :
+ 
+ 
+ 
+ user 
+  userId 
+  userName
+ 
+ Order 
+ 
+ orderId
+ userId
+ productName
+ quabtity
+ 
+ 
+ Select * from user, orderId
+ 
+ where order.quantity>5,
+ 
+ LEFT JOIN user.userID = order.userId;
+
+ emp
+name, email, dept_id
+N1, E1, 1
+N2, E2, 2
+N3, E3, 3
+
+dept
+id, name
+1, D1
+2, D2
+4, D4
+
+select e.name, e.email, d.name
+from emp e
+left Join dept d
+on e.dept_id=d.id
+
+
+result:
+
+N1,E1, D1
+N2, E2, D2
+
+
+table a 10 records,  coping to table b
+
+select 
+
+
+explain select * from emp where sal = x and dept_name = y;
+
+indexing:
+
+empName_deptName
+empid_empName   
+
+// Interview was focused on DB performance optimization

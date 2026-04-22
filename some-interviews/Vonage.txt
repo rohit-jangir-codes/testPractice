@@ -1,0 +1,11 @@
+Vonage:
+
+1st round:
+
+DSA: Gready problem (petrol pump problem)
+JVM
+
+2nd round:
+
+Current projects discussion
+Design a system/microservice that will collect logs from other services and user should be able to query the logs. (Higl level, system design and technology choosing reasoning)

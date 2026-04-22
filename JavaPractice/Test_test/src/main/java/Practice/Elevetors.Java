@@ -72,3 +72,13 @@ public class ElevatorSystem {
         return elevators.get(0); // Placeholder
     }
 }
+
+
+boolean reserveInventory(String productId) {
+    reserveInventory.reserve("productId:"+productId);
+}
+
+interface InventoryService {
+    boolean reserve(String productId);
+    void release(String productId);
+}

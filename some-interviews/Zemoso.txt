@@ -1,0 +1,11 @@
+Zemoso:
+
+1st round:
+
+Java based questions
+Jvm based questions
+Spring Core & Spring MVC questions
+Java8 focused. 2 coding problem using streams. 
+
+1. find first non repeating character in String str = "character";
+2. find app the possible combinations of String str = "abc";

@@ -1,0 +1,57 @@
+
+
+Cybrilla 1st round:
+
+
+You are given access to a function:
+fileExists(folderName, fileName) → boolean
+This function returns true if a file with the given fileName already exists inside folderName, and false otherwise.
+Implement the following function:
+getFileName(folderName, fileName) → string
+Requirements:
+If fileName does not exist in the given folder, return it unchanged.
+If it exists, append "_copyN" to the base name, where N is the smallest positive integer (starting from 1) that makes the name unique within that folder.
+If fileName already ends with "_copyN", treat it as a copy of the original base name (do not produce names like "name_copy1_copy1").
+Each folder is independent — name conflicts are checked only within the given folder.
+Examples:
+Folder: "folderA"
+getFileName("folderA", "report") → "report"
+getFileName("folderA", "report") → "report_copy1"
+getFileName("folderA", "report") → "report_copy2"
+getFileName("folderA", "report_copy1") → "report_copy3"
+getFileName("folderA", "summary") → "summary"
+Folder: "folderB"
+getFileName("folderB", "report") → "report"
+getFileName("folderB", "report") → "report_copy1"
+getFileName("folderB", "report_copy1") → "report_copy2"
+getFileName("folderB", "notes") → "notes"
+
+
+================================================================
+
+1. extarct the base name
+2. 
+
+
+getFileName(folder, filename);
+
+baseName = extarct basename (remove _copyN if there)
+
+if fileExists (folder, baseName) == false
+return baseName
+
+n =1
+
+while true:
+
+newFile = baseName + _copy + name
+
+if fileExists(folder, newFile) false
+
+return newFile
+
+n=n+1;
+
+
+// Most toxic interviewr ever seen. Felt like he wanted to reject from the time he open his mouth. Worst experience ever. Answered all the asked question, performed great according to me. 
+// Later ghosted by HR

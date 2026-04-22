@@ -1,0 +1,58 @@
+
+
+SKIDATA 1st round:
+
+
+final class person{
+
+private final String name;
+private final List<String> certificate;
+
+public Person(String name, List<String> certificate) {
+this.name =name;
+this.certificate = new ArrayList<>(certificate);
+
+}
+
+
+public String getName(){
+return name;
+}
+
+public List<String> getCertificate()
+{
+return Collections.unmodifiableList(certificate);
+}
+
+}
+
+try {
+return 1} catch {
+}
+
+
+emp,
+
+id , name, dept
+
+hike id, rating , salary
+
+
+Employee{
+id
+name
+dept}
+
+
+List<Employee> emp;
+
+
+List<Employee> newEmp = emp.stream()
+.filter(e -> Optional.ofNullable(e.getDep()).orElse(false).equals("IT") && e.getRating() > 4)
+.map(e -> {e.getSalary(e.getSalary *1.10)
+return e;})
+.sorted(Comparetor.campare(Hike::getName).reversed)
+.toList();
+
+
+// Interview was focused on JAVA8. 

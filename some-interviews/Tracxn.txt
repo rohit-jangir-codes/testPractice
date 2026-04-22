@@ -1,0 +1,12 @@
+
+Tracxn:
+
+1st round:
+
+DSA: Container with most water
+
+2nd round:
+
+Db optimization. Indexing and everything
+DSA: intervals overlap (solved)
+DSA: List<String> str = ["3", "24", "45", "67", "131"]; Find the combination that will be highest

@@ -1,0 +1,101 @@
+Welcome to the CubeLogic interview process 👋
+
+This task is meant to give you a realistic feel for the kind of problems we work on — including code style, complexity, and day-to-day backend tasks.
+
+You’ll probably enjoy this assignment if:
+
+* Java is your primary language 
+* You like working with real-world, non-toy code 
+* Medium-complexity problems feel engaging rather than stressful or boring
+# Coding Challenge – Pagination & Best Item Navigation
+
+## Introduction
+
+Congratulations on successfully passing the screening step 🎉  
+This coding challenge is an extension of the task you received in the previous step.
+
+The goal of this exercise is to extend the existing application so that it:
+- exposes additional item metadata (*wonderful* / *best*),
+- supports efficient pagination, and
+- allows easy navigation between pages containing *best* items.
+
+---
+
+## Data Model
+
+The application contains a table named `wonderful_item` with the following structure:
+
+- `item_id`
+- `is_the_best`
+
+Not all items are *wonderful*, therefore not every item has a corresponding entry in this table.
+
+---
+
+## Business Requirements
+
+Our clients want to:
+- see which items are *wonderful*,
+- see which of those are marked as *the best*, and
+- avoid loading all items at once, as the total number of items can reach **1 million**.
+
+---
+
+## Functional Requirements
+
+### 1. Pagination
+
+The API must return **only the requested page of items**.
+
+### 2. Best Item Navigation
+
+In addition to the paginated list of items, the API response must include:
+
+- the page number of the **next** page that contains at least one *best* item (if any),
+- the page number of the **previous** page that contains at least one *best* item (if any).
+
+This allows the frontend to quickly jump between pages containing *best* items.
+
+---
+
+## Navigation Rules & Examples
+
+- If the requested page contains **no best items**, and the first *best* item appears on page 5:
+  - `nextBestPage = 5`
+  - `previousBestPage = null`
+
+- If page 5 contains three *best* items, and the next *best* item appears on page 7:
+  - requesting page 5 should return:
+    - `nextBestPage = 7`
+    - `previousBestPage = null`
+
+- If page 7 is requested:
+  - `previousBestPage = 5`
+  - `nextBestPage = <next page containing a best item, if any>`
+
+---
+
+## API Expectations
+
+You are free to design the API as you see fit, provided that:
+- pagination is supported,
+- *wonderful* and *best* item flags are exposed,
+- navigation metadata for previous and next *best* pages is included in the response.
+
+---
+
+## Non-Functional Requirements
+
+- Focus on **code quality**, **clarity**, and **maintainability**
+- Consider **performance** and **scalability**, given the potential data volume
+- Keep the solution clean and easy to reason about
+
+---
+
+## Final Notes
+
+We understand that this is a non-trivial amount of work, but it reflects the type of real-world problems our developers solve on a daily basis.
+
+We hope you enjoy working on this challenge and wish you the best of luck! 🚀
+
+If this task feels either overwhelming or uninteresting, that’s completely fine — it may simply not be the right moment, and we’d be happy to reconnect in the future.

@@ -1,0 +1,17 @@
+
+
+
+find second highest salary from every departmanet using streams
+
+
+employee table:
+
+1. aman hr 500000
+2. ros IT 20200
+3. dsfd r&d 021200
+4. gos hr 23001
+5. tia hr 20001
+6. gita IT 13002
+7. papu r&d 1332
+
+difference between static, final. what will happen if while creating the object of the class it's set to null. But class is static

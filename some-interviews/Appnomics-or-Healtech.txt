@@ -1,0 +1,16 @@
+Appnomics/healtech
+
+1st round:
+
+Focused on java8 and SQl
+
+2nd round:
+
+Microservice optimization focused.
+Rabbit MQ
+Java8
+DSA: reverse singly linked list
+
+3rd round:
+
+Manager round, behivoural focused

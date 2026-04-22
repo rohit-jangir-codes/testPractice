@@ -1,0 +1,214 @@
+
+
+Vimaan: 1st round
+
+
+@RestController
+@RequestMapping("v1/api")
+public class sampleController{
+
+
+
+  @postMapping("/process")
+  public ResponseEntity<List<String>>  processString(@RequestBody List<String> input){
+  
+  List<String> result = input.stream().filter(s -> s.matches("\d+")).map(Integer::parseInt).filter(n -> n%2 ==0).mapToInt(Integer::integer).sum();
+  
+  }
+  
+  car - tire - company
+  
+  match  (c:car) - [connected-to] -> (t:tire)
+  return t.companyName;
+
+
+}
+
+emp : id, name, dep-id, salary
+dep: dep-id, dep-name
+
+department-id, salary
+
+select name, salary, dep-id 
+from { select
+name,
+dep-id,
+salary,
+DENSE_RANK() over {
+PARTITION BY dep-id
+ORDER BY salary DESC
+} as ranking
+
+from emp
+} e where ranking = 2;
+
+
+
+====================================================
+2nd round: 
+
+
+Design a push notif service:
+
+
+email, phone, notification
+
+microservice arch, 
+
+
+1. microservices 
+2. Notification
+3. Message Queue RabbitMQ
+4. Message consumer
+
+a. email service
+b. sms service/notif
+
+5. External receiver
+
+
+
+service a:
+
+notify : {
+
+userId,
+type: "phone/email",
+templateId: "oder-confirm",
+data
+}
+
+
+Microservice:
+
+
+1. consumer:
+
+{
+userId,
+type: "phone/email",
+templateId: "oder-confirm",
+data
+}
+
+2. channel routing layer
+based on channel/type
+email handle
+sms/phone handle
+
+3. temlate Engine:
+fetch temaplate data using templateId
+
+4. user prefrance
+
+Fetch prefrance
+
+email/sms
+
+5. channel specific handlers:
+
+integrate with smtp/email
+
+sms handler: third party
+
+6. Retry and Failure handeling
+
+railed to send: retry with ex-backof
+after retries send to DLQ
+
+7. Status Tracking DB
+
+notificationId
+status(Prnding/sent/failed)
+retryCount
+timestamps
+
+8. Idempotency:
+unique notificationId
+
+
+
+NotificationRequest{
+String notificationId,
+String userId,
+ChannelType channel,
+String templateId,
+Map<String, Object> payload;
+}
+
+NotificationStatus{
+String notificationId,
+String userId,
+ChannelType channel,
+Status status,
+int retry,
+long timestamp;
+}
+
+interfaces:
+
+interface NotificationHandler{
+
+void sendNotification(NotificationRequest request);
+
+}
+
+Impl of interfaces:
+
+class EmailHandler implements NotificationHandler {}
+class SMSHandler implements NotificationHandler {}
+
+
+Router:
+
+class NotificationHandlerRouter{
+
+NotificationHandler getHandler(ChannelType type) {
+switch(type) {
+camse EMAIL: return new EmailHandler();
+case SMS: return new SMSHandler();
+default: throw new IAE("invalid type");
+}
+}
+}
+
+class NotifConsumer{
+
+NotificationHandlerRouter router;
+
+void consume(Message msg) {
+NotificationRequest request = deserlize(msg);
+
+if (isDuplicate(request.notificationId)) {
+return
+send ack;
+}
+NotificationHandler handler = router.getHandler(request.channel);
+
+try {
+handler.send(request);
+updateStatus(request, "sent");
+send ack;
+} catch(Ex e) {
+handlerRetry(request);
+}
+}
+
+
+redis cache, ready faster
+
+boolean isDuplicate(String notificationId) {
+
+return redis.exists
+}
+
+=====================================================================
+3rd round:
+
+Current projects understanding
+System design
+and technologies understanding 
+
+
+
+
